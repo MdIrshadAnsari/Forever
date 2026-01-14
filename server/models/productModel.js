@@ -13,6 +13,32 @@ const productSchema = mongoose.Schema({
         type: Number,
         required: true,
     },
+        image :{
+        type: Array,
+        required: true,
+    },
+        category :{
+        type: String,
+        required: true,
+    },
+        subcategory :{
+        type: String,
+        required: true,
+    },
+        sizes :{
+        type: Array,
+        required: true,
+    },
+        bestseller :{
+        type: Boolean,
+        
+    },
+        date :{
+        type: Number,
+        required: true,
+    },
 
 })
+
+module.exports = mongoose.model("product", productSchema)
 
